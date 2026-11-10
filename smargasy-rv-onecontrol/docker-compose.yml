@@ -10,7 +10,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   server:
-    image: ghcr.io/smargasy/rv-onecontrol:sha-d70a053
+    image: ghcr.io/smargasy/rv-onecontrol:sha-b9cfbea
     restart: on-failure
     init: true
     network_mode: host
