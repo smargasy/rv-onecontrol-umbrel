@@ -7,9 +7,10 @@ services:
     environment:
       APP_HOST: host.docker.internal
       APP_PORT: 18787
+      PROXY_AUTH_ADD: "false"
 
   server:
-    image: ghcr.io/smargasy/rv-onecontrol:sha-a44de78
+    image: ghcr.io/smargasy/rv-onecontrol:sha-afbc0d0
     restart: on-failure
     init: true
     network_mode: host
