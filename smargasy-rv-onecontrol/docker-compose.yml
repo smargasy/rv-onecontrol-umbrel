@@ -10,7 +10,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   server:
-    image: ghcr.io/smargasy/rv-onecontrol:sha-3298857
+    image: ghcr.io/smargasy/rv-onecontrol:sha-d70a053
     restart: on-failure
     init: true
     network_mode: host
@@ -23,7 +23,6 @@ services:
       ONECONTROL_MOCK: "false"
       ONECONTROL_GATEWAY: "192.168.1.1:6969"
       ONECONTROL_CMD_MODE: "inline"
-      ONECONTROL_HVAC_POLL_MS: "2000"
       ONECONTROL_FIXTURE: /app/fixtures/andreas_devices.json
       ONECONTROL_RUN_UID: "1000"
       ONECONTROL_RUN_GID: "1000"
