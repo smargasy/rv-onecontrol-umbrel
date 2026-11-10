@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="OneControl">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#g)"/>
+  <path fill="#fff" d="M28 76h72v8H28zm12-36h48a8 8 0 0 1 8 8v44H32V48a8 8 0 0 1 8-8zm8 16h32v8H48zm0 16h24v8H48z"/>
+  <circle cx="96" cy="40" r="10" fill="#fbbf24"/>
+</svg>

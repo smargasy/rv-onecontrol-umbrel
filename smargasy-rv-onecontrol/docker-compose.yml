@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: smargasy-rv-onecontrol_server_1
+      APP_PORT: 8080
+
+  server:
+    image: ghcr.io/smargasy/rv-onecontrol:sha-8e7af10
+    restart: on-failure
+    init: true
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+    environment:
+      LISTEN_ADDR: 0.0.0.0:8080
+      STATIC_DIR: /app/static
+      DATA_DIR: /data
+      ONECONTROL_MOCK: "false"
+      ONECONTROL_GATEWAY: "192.168.1.1:6969"
+      ONECONTROL_CMD_MODE: "inline"
+      ONECONTROL_FIXTURE: /app/fixtures/andreas_devices.json
+      ONECONTROL_RUN_UID: "1000"
+      ONECONTROL_RUN_GID: "1000"
+      # RUST_LOG: rv_onecontrol_web=info

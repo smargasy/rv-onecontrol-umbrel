@@ -1,0 +1,33 @@
+manifestVersion: 1
+id: smargasy-rv-onecontrol
+category: utilities
+name: OneControl
+tagline: Web dashboard for Lippert IdsCan RV coaches
+icon: icon.svg
+version: "0.1.0"
+port: 8787
+description: >-
+  Self-hosted control panel for Lippert **OneControl** coaches on the older
+  **IdsCan** gateway (TCP `192.168.1.1:6969`). Lights, HVAC, tanks, scenes, and
+  schedules — without water pump, slides, or awning controls.
+
+  **Live use:** close the official OneControl mobile app first (one TCP client).
+  Point the app at your gateway IP; Umbrel reaches the coach over your LAN.
+
+  Persistent settings, favorites, and history live under the app's data directory
+  on Umbrel (`user.json`, `favorites.json`, `schedules.json`, `telemetry.db`).
+developer: Andreas / smargasy
+website: https://github.com/smargasy/rv-onecontrol
+dependencies: []
+repo: https://github.com/smargasy/rv-onecontrol
+support: https://github.com/smargasy/rv-onecontrol/issues
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+releaseNotes: >-
+  Initial Umbrel community release. Image ghcr.io/smargasy/rv-onecontrol:sha-8e7af10.
+  Commands share the single gateway connection (no reconnect per toggle). Only run one
+  instance against the gateway at a time.
+submitter: smargasy
+submission: https://github.com/smargasy/rv-onecontrol-umbrel
